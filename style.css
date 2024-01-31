@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,800;1,300;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --FoundationClr: #E6F7FF;
+    --basePrimary: #01B3FB;
+    --basebtnClr:#FABD02;
+    --textGradient:linear-gradient(260.19deg,#FABD02 -10.9%, #01B3FB 70.24%);
+    --resultAnimation:rgba(176, 231, 254, 1);
+
+
+}
+body{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+
+}
+#headerContact{
+    background-color: var(--FoundationClr);
+}
+.container{
+    padding:15px 80px ;
+}
+
+
+/* contact section */
+div#contactSection {
+    padding: 5px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #8080802e;
+}
+
+.socailMedia {
+    gap: 6px;
+    display: flex;
+}
+
+.socailMedia a {
+    color: black;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    color: #404040;
+    font-size: 12px;
+}
+
+.contactInfo i {
+    margin-right: 4px;
+}
+/* header section start */
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Mainicon {
+    width: 60px;
+}
+
+.Mainicon img {
+    width: 100%;
+}
+
+nav.nevbar {
+    display: flex;
+    gap: 16px;
+}
+.nevbar .active{
+    color: var(--basePrimary) ;
+    border-bottom:1px solid var(--basePrimary);
+}
+
+nav.nevbar li {
+    list-style: none;
+}
+
+nav.nevbar a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+.nevbar a:hover{
+    color: var(--basePrimary);
+    border-bottom:1px solid var(--basePrimary);
+}
+
+button.btn {
+    padding: 10px 14px;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: navajowhite;
+    border-radius: 19px;
+    background-color: var(--basebtnClr);
+}
+button.btn i {
+    background: black;
+    color: white;
+    border-radius: 71px;
+    font-size: 15px;
+}
+
+button.btn:hover {
+    cursor: pointer;
+}
+/* header section end */
+
+/* herosection start */
+#heroSection{
+    background: var(--FoundationClr);
+}
+.herowrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0px;
+}
+
+.heroSectionRight {
+    width: 40%;
+    flex-basis: 45%;
+}
+
+.heroSectionRight img {
+    width: 100%;
+}
+
+.heroSectionleft h1 {font-size: 47px;margin-bottom: 28px;/* padding: 17px 0px; */}
+
+.heroSectionleft h1 span{
+    background:linear-gradient(260.19deg,#FABD02 -10.9%, #01B3FB 70.24%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+.heroSectionleft {
+    flex-basis: 50%;
+}
+
+form input {
+    padding: 12px 12px;
+    border: 1px solid gray;
+    border-radius: 34px;
+}
+.resultAnimetion{
+    background: var(--resultAnimation);
+}
+.resultAnimationWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resultAnimationWrapper p {
+    font-size: 11px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.resultAnimationWrapper img {
+    width: 17px;
+}
+/* herosection end */
+
+/* trusted partner section */
+.trustedwrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trustedDivleft {
+    flex-basis: 50%;
+}
+
+.trustedDivRight {
+    flex-basis: 50%;
+    text-transform: capitalize;
+}
+
+.trustedDivRight h2 {
+    font-size: 32px;
+}
+
+.trustedDivRight p {
+    padding: 16px 0px;
+    color: #3c3c3c;
+}
+
+.btnSection {
+    display: flex;
+    gap: 19px;
+}
+
+button.btnLight {
+    background: white;
+    padding: 12px 13px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid #808080b8;
+}
+button.btnLight:hover{
+    cursor: pointer;
+}
+h1 {}
+
+.ourBussness h1 {
+    text-align: center;
+    padding: 40px 0px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.ourBussness h1 span{
+    background: linear-gradient(327.44deg, #01B3FB 33.5%, #FABD02 66.13%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ourBussnessIcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ourBussnessIcon span img {
+    width: 100%;
+}
+
+.ourBussnessIcon {}
+
+.ourBussnessIcon {}
+
+.ourBussnessIcon span {
+    width: 100px;
+}
+.sliderBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px 0;
+}
+
+.sliderBar span {
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border-radius: 31px;
+}
+.sliderBar span.active{
+  background:var(--basebtnClr);
+}
+.sliderBar span:hover{
+ cursor: pointer;
+}
+/* trusted section start */
+
+#service{
+    background-color: var(--FoundationClr);
+}
+.serviceWrapper h1 {
+    font-size: 40px;
+    text-align: center;
+
+}
+.serviceWrapper h1 span{
+    background: linear-gradient(327.44deg, #01B3FB 33.5%, #FABD02 66.13%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.serviceItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 0px;
+}
+
+.serviceBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 14px;
+}
+/* service section :end */
